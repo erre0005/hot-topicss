@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Martel|Nunito+Sans&display=swap');
+/* body font-family: 'Nunito Sans', sans-serif;
+ head font-family: 'Martel', serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    background-color: #fcfcf3;
+    color: #000c02;
+ }
+
+h2 {
+    font-family: 'Martel', serif;
+    font-size: 1.4rem;
+    margin: 10px;
+    color: #000c02;
+}
+
+h3 {
+    font-family: 'Martel', serif;
+    font-size: 1.28rem;
+    color: #ff5246;
+}
+
+figcaption {
+    font-size: 0.75rem;
+}
+
+/* nav styles start here */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50%;
+    background-image: url(../img/masthead.jpg);
+    color: #fefefe;
+}
+
+.logo {
+    width: 8em;
+    height: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+
+.main-nav {
+     list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.main-nav li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #fefefe;
+}
+.main-nav li a:hover {
+    color: #0088a9
+}
+
+.tagline {
+    padding: 5px 10px;
+    font-size: 12pt;
+}
+/* home.html body classes start here */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+.fig img { 
+    padding: 0 0 2rem 0;
+    width: 15rem; 
+    height: 13rem;
+}
+
+/*portfolio.html body classes start here*/ 
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0.75rem;
+}
+
+.port-fig img{
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+}
+
+/* footer classes start here */
+hr {
+    width: 95%;
+}
+.smedia {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.smedia li {
+    display: inline-block;
+}
+
+
+.smedia li a {
+    text-decoration: none;
+    color: #000c02;
+}
+
+.fab {
+    margin: 0 3rem;
+}
+
+
+
+@media screen and (min-width: 35rem) {
+    header {
+        justify-content: space-between;
+        padding: 30px 10%;
+    }
+
+    .logo {
+        width: 12em;
+    }
+    .home {
+        margin: 2rem;
+    }
+    h1.tagline {
+        padding: 0.25rem 3rem;
+    }
+
+    a.navbar {
+        font-size: 11pt;
+    }
+
+    /* home.html body */
+   
+    .fig img { 
+        padding: 0 0 2rem 0;
+        width: 24rem; 
+        height: 20rem;
+    }
+
+    /*portfolio.html body */
+    .portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+
+    }
+
+    .port-fig {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    figcaption {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .tagline {
+        padding: 0.25rem 20rem;
+    }
+    
+    /* home.html body */
+    .fig img {
+        width: 48rem;
+        height: 37rem;
+    }
+    /*portfolio.html body */
+    .port-fig {
+        width: 27rem;
+        height: 27rem;
+    }
+
+    figcaption {
+        font-size: 1.25rem;
+    }
+} 
